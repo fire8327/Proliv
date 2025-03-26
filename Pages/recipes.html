@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="../Assets/CSS/main.css">
 </head>
 <body class="text-[#FFF4EB] bg-[#FFF4EB]">
+    <header class="w-full p-1 relative">
+        <div class="flex lg:h-[76px] items-center gap-1 max-lg:justify-between max-lg:bg-[#132420] max-lg:rounded-[15px] max-lg:py-2 max-lg:px-4">
+            <a href="../index.html" class="w-fit lg:w-[76px] lg:h-[76px] flex items-center justify-center bg-[#132420] lg:p-2 lg:rounded-[15px] shrink-0">
+                <img src="../Assets/Images/header/logo.png" alt="" class="w-8 lg:w-full">
+            </a>
+            <div id="menu" class="grow lg:h-full py-4 lg:bg-[#132420] lg:rounded-[15px] lg:px-5 flex items-center lg:justify-between xl:justify-end xl:gap-[200px] transition-all duration-500 max-lg:flex-col max-lg:w-full max-lg:gap-6 max-lg:py-6 max-lg:absolute max-lg:bg-[#132420] max-lg:rounded-b-[10px] max-lg:left-0 max-lg:top-0 max-lg:-translate-y-full max-lg:z-[5]">
+                <div class="flex items-center font-semibold text-[18px] leading-[21px] max-lg:flex-col">
+                    <a href="about.html" class="px-[26px] py-[7px]">о проекте</a>
+                    <a href="types.html" class="px-[26px] py-[7px]">виды чая</a>
+                    <a href="ceremonies.html" class="px-[26px] py-[7px]">церемонии</a>
+                    <a href="recipes.html" class="px-[26px] py-[7px] bg-[#0E1614] rounded-[10px]">рецепты</a>
+                </div>
+                <form class="relative">
+                    <input type="text" placeholder="Поиск" class="w-[225px] text-sm leading-[16px] py-3 pl-6 pr-9 rounded-full border border-[#FFF4EB] placeholder:text-[#FFF4EB]">
+                    <button class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
+                        <img src="../Assets/Images/icons/lupa.svg" alt="">
+                    </button>
+                </form>
+            </div>
+            <button id="toggler" class="lg:hidden cursor-pointer">
+                <img src="../Assets/Images/header/menu.svg" alt="">
+            </button>
+        </div>
+        <div id="overlay" class="fixed h-screen inset-0 bg-black/70 top-14 z-[4] max-lg:hidden lg:hidden"></div>
+    </header>
     <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 w-full px-1 pb-1">
         <div class="flex flex-col gap-5 p-1 lg:p-2.5 rounded-[15px] lg:rounded-[25px] bg-[#132420]">
             <div class="w-full h-[242px] lg:h-[280px] bg-[#FFF4EB] rounded-[10px] lg:rounded-[20px] flex items-center justify-center">
