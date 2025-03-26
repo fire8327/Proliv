@@ -1357,6 +1357,31 @@
       line-height: 120%;
     }
   }
+  .xl\:w-1\/2 {
+    @media (width >= 80rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
+  .xl\:w-1\/5 {
+    @media (width >= 80rem) {
+      width: calc(1/5 * 100%);
+    }
+  }
+  .xl\:w-\[1\] {
+    @media (width >= 80rem) {
+      width: 1;
+    }
+  }
+  .xl\:w-\[18\%\] {
+    @media (width >= 80rem) {
+      width: 18%;
+    }
+  }
+  .xl\:w-\[20\%\] {
+    @media (width >= 80rem) {
+      width: 20%;
+    }
+  }
   .xl\:w-fit {
     @media (width >= 80rem) {
       width: fit-content;
@@ -1370,6 +1395,11 @@
   .xl\:gap-\[200px\] {
     @media (width >= 80rem) {
       gap: 200px;
+    }
+  }
+  .\32 xl\:w-\[18\%\] {
+    @media (width >= 96rem) {
+      width: 18%;
     }
   }
 }
