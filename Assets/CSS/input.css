@@ -6,3 +6,17 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Steppe';
+    src: local('Steppe Regular'), local('Steppe-Regular'),
+        url('../Fonts/Steppe-Regular.woff2') format('woff2'),
+        url('../Fonts/Steppe-Regular.woff') format('woff'),
+        url('../Fonts/Steppe-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.steppe {
+    font-family: 'Steppe';
+}
