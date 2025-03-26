@@ -637,6 +637,9 @@
   .text-\[clamp\(15\,1\.8vw\,18px\)\] {
     font-size: clamp(15, 1.8vw, 18px);
   }
+  .text-\[clamp\(15px\,1\.8vw\,18px\)\] {
+    font-size: clamp(15px, 1.8vw, 18px);
+  }
   .text-\[clamp\(15px\,2\.4vw\,24px\)\] {
     font-size: clamp(15px, 2.4vw, 24px);
   }
