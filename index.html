@@ -6,14 +6,81 @@
     <title>Главная</title>
     <link rel="stylesheet" href="Assets/CSS/main.css">
 </head>
-<body>
-    <header class="w-full px-4 py-[5px]">
-        <div class="flex items-center gap-1 max-lg:justify-between max-lg:bg-[#132420] max-lg:rounded-[15px] max-lg:py-2 max-lg:px-[15px]">
-            <a href="index.html" class="w-fit lg:w-[76px] lg:h-[76px] flex items-center justify-center bg-[#132420] lg:p-2 lg:rounded-[15px]">
-                <img src="Assets/Images/header/logo.png" alt="" class="w-[33px] lg:w-full">
+<body class="text-[#FFF4EB] bg-[#FFF4EB]">
+    <header class="w-full p-1">
+        <div class="flex lg:h-[76px] items-center gap-1 max-lg:justify-between max-lg:bg-[#132420] max-lg:rounded-[15px] max-lg:py-2 max-lg:px-4">
+            <a href="index.html" class="w-fit lg:w-[76px] lg:h-[76px] flex items-center justify-center bg-[#132420] lg:p-2 lg:rounded-[15px] shrink-0">
+                <img src="Assets/Images/header/logo.png" alt="" class="w-8 lg:w-full">
             </a>
-            <div class="grow h-full py-4 lg:bg-[#132420] lg:rounded-[15px] lg:px- flex items-center lg:justify-end"></div>
+            <div class="grow h-full py-4 lg:bg-[#132420] lg:rounded-[15px] lg:px-5 flex items-center lg:justify-between xl:justify-end xl:gap-[200px] max-lg:hidden">
+                <div class="flex items-center font-semibold text-[18px] leading-[21px]">
+                    <a href="" class="px-[26px] py-[7px]">о проекте</a>
+                    <a href="" class="px-[26px] py-[7px] rounded-[10px] bg-[#0E1614]">виды чая</a>
+                    <a href="" class="px-[26px] py-[7px]">церемонии</a>
+                    <a href="" class="px-[26px] py-[7px]">рецепты</a>
+                </div>
+                <form class="relative">
+                    <input type="text" placeholder="Поиск" class="w-[225px] text-sm leading-[16px] py-3 pl-6 pr-9 rounded-full border border-[#FFF4EB] placeholder:text-[#FFF4EB]">
+                    <button class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
+                        <img src="Assets/Images/icons/lupa.svg" alt="">
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
+    <main class="grid grid-cols-4 gap-1 w-full px-1">
+        <div class="w-full col-span-2 bg-[#132420] flex flex-col justify-between p-6 rounded-[25px]">
+            <p class="font-semibold text-[55px] leading-[58px] max-w-[499px]">пролив — медиа о чайной культуре</p>
+            <p class="font-medium text-xl leading-[130%] max-w-[439px]">цифровое чайное пространство для уединения, вдумчивости и эксперимента</p>
+        </div>
+        <div class="w-full flex flex-col gap-5 p-2.5 pb-5 rounded-[25px] bg-[#132420]">
+            <div class="relative">
+                <img src="Assets/Images/index/ceremony.png" alt="" class="w-full">
+                <p class="font-semibold text-xl leading-[120%] text-[#132420]/85 absolute top-4 right-4">#церемония дня</p>
+            </div>
+            <a href="" class="w-full flex items-center justify-between gap-[18px] group">
+                <span class="font-medium text-xl leading-[120%]">гунфу-ча: искусство усердия и внимания</span>
+                <img src="Assets/Images/icons/arrow.svg" alt="" class="shrink-0 transition-all duration-500 group-hover:-translate-y-1.5">
+            </a>
+        </div>
+        <div class="w-full flex flex-col gap-5 p-2.5 pb-5 rounded-[25px] bg-[#132420]">
+            <div class="relative">
+                <img src="Assets/Images/index/ceremony2.png" alt="" class="w-full">
+                <p class="font-semibold text-xl leading-[120%] text-[#132420]/85 absolute top-4 right-4">#церемония месяца</p>
+            </div>
+            <a href="" class="w-full flex items-center justify-between gap-[18px] group">
+                <span class="font-medium text-xl leading-[120%]">как проводят день весеннего равноденствия</span>
+                <img src="Assets/Images/icons/arrow.svg" alt="" class="shrink-0 transition-all duration-500 group-hover:-translate-y-1.5">
+            </a>
+        </div>
+        <div class="w-full h-[282px] rounded-[25px] bg-[#132420] pt-6 pb-2.5 px-2.5 flex flex-col items-center gap-3">
+            <img src="Assets/Images/index/1.svg" alt="" class="">
+            <a href="" class="mt-auto group w-full px-5 py-2.5 text-[#132420] text-[25px] leading-[29px] font-semibold flex items-center justify-between rounded-[20px] bg-[#FFF4EB]">
+                <span>о проекте</span>
+                <img src="Assets/Images/icons/arrow2.svg" alt="" class="transition-all duration-500 group-hover:-translate-y-1.5">
+            </a>
+        </div>
+        <div class="w-full h-[282px] rounded-[25px] bg-[#132420] pt-6 pb-2.5 px-2.5 flex flex-col items-center gap-3">
+            <img src="Assets/Images/index/2.svg" alt="" class="">
+            <a href="" class="mt-auto group w-full px-5 py-2.5 text-[#132420] text-[25px] leading-[29px] font-semibold flex items-center justify-between rounded-[20px] bg-[#FFF4EB]">
+                <span>виды чая</span>
+                <img src="Assets/Images/icons/arrow2.svg" alt="" class="transition-all duration-500 group-hover:-translate-y-1.5">
+            </a>
+        </div>
+        <div class="w-full h-[282px] rounded-[25px] bg-[#132420] pt-6 pb-2.5 px-2.5 flex flex-col items-center gap-3">
+            <img src="Assets/Images/index/3.svg" alt="" class="">
+            <a href="" class="mt-auto group w-full px-5 py-2.5 text-[#132420] text-[25px] leading-[29px] font-semibold flex items-center justify-between rounded-[20px] bg-[#FFF4EB]">
+                <span>рецепты</span>
+                <img src="Assets/Images/icons/arrow2.svg" alt="" class="transition-all duration-500 group-hover:-translate-y-1.5">
+            </a>
+        </div>
+        <div class="w-full h-[282px] rounded-[25px] bg-[#132420] pt-6 pb-2.5 px-2.5 flex flex-col items-center gap-3">
+            <img src="Assets/Images/index/4.svg" alt="" class="">
+            <a href="" class="mt-auto group w-full px-5 py-2.5 text-[#132420] text-[25px] leading-[29px] font-semibold flex items-center justify-between rounded-[20px] bg-[#FFF4EB]">
+                <span>церемонии</span>
+                <img src="Assets/Images/icons/arrow2.svg" alt="" class="transition-all duration-500 group-hover:-translate-y-1.5">
+            </a>
+        </div>
+    </main>
 </body>
 </html>
