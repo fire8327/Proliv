@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -176,8 +177,14 @@
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-4 {
     right: calc(var(--spacing) * 4);
+  }
+  .right-8 {
+    right: calc(var(--spacing) * 8);
   }
   .left-1 {
     left: calc(var(--spacing) * 1);
@@ -203,11 +210,32 @@
   .h-\[159px\] {
     height: 159px;
   }
+  .h-\[179px\] {
+    height: 179px;
+  }
+  .h-\[376px\] {
+    height: 376px;
+  }
   .h-full {
     height: 100%;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/5 {
+    width: calc(1/5 * 100%);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[40\%\] {
+    width: 40%;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -220,6 +248,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[338px\] {
+    max-width: 338px;
   }
   .max-w-\[439px\] {
     max-width: 439px;
@@ -267,6 +298,9 @@
   .resize {
     resize: both;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -281,6 +315,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -349,6 +386,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
   .px-\[26px\] {
     padding-inline: 26px;
   }
@@ -361,11 +401,20 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-3\.5 {
+    padding-block: calc(var(--spacing) * 3.5);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
   .py-\[7px\] {
     padding-block: 7px;
+  }
+  .py-\[13\.5px\] {
+    padding-block: 13.5px;
+  }
+  .py-\[13\] {
+    padding-block: 13;
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
@@ -388,6 +437,9 @@
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
+  .text-left {
+    text-align: left;
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -395,11 +447,29 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[clamp\(\)\] {
+    font-size: clamp();
+  }
+  .text-\[clamp\(\,20px\)\] {
+    font-size: clamp(, 20px);
+  }
   .text-\[clamp\(11px\,2vw\,20px\)\] {
     font-size: clamp(11px, 2vw, 20px);
   }
   .text-\[clamp\(14px\,3vw\,25px\)\] {
     font-size: clamp(14px, 3vw, 25px);
+  }
+  .text-\[clamp\(17px\,2vw\,20px\)\] {
+    font-size: clamp(17px, 2vw, 20px);
+  }
+  .text-\[clamp\(17px\,2vw\,40px\)\] {
+    font-size: clamp(17px, 2vw, 40px);
+  }
+  .text-\[clamp\(17px\,3vw\,40px\)\] {
+    font-size: clamp(17px, 3vw, 40px);
+  }
+  .text-\[clamp\(20px\)\] {
+    font-size: clamp(20px);
   }
   .text-\[clamp\(30px\,4vw\,55px\)\] {
     font-size: clamp(30px, 4vw, 55px);
@@ -411,6 +481,10 @@
   .leading-\[21px\] {
     --tw-leading: 21px;
     line-height: 21px;
+  }
+  .leading-\[106\%\] {
+    --tw-leading: 106%;
+    line-height: 106%;
   }
   .leading-\[110\%\] {
     --tw-leading: 110%;
@@ -440,6 +514,9 @@
   }
   .text-\[\#FFF4EB\] {
     color: #FFF4EB;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .underline {
     text-decoration-line: underline;
@@ -505,6 +582,11 @@
       padding-block: calc(var(--spacing) * 2);
     }
   }
+  .lg\:right-0 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:col-span-2 {
     @media (width >= 64rem) {
       grid-column: span 2 / span 2;
@@ -520,6 +602,16 @@
       height: 282px;
     }
   }
+  .lg\:h-\[376px\] {
+    @media (width >= 64rem) {
+      height: 376px;
+    }
+  }
+  .lg\:w-\[25\%\] {
+    @media (width >= 64rem) {
+      width: 25%;
+    }
+  }
   .lg\:w-\[60\%\] {
     @media (width >= 64rem) {
       width: 60%;
@@ -533,6 +625,11 @@
   .lg\:w-full {
     @media (width >= 64rem) {
       width: 100%;
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-4 {
@@ -590,10 +687,28 @@
       padding-bottom: calc(var(--spacing) * 5);
     }
   }
+  .lg\:leading-\[23px\] {
+    @media (width >= 64rem) {
+      --tw-leading: 23px;
+      line-height: 23px;
+    }
+  }
   .lg\:leading-\[58px\] {
     @media (width >= 64rem) {
       --tw-leading: 58px;
       line-height: 58px;
+    }
+  }
+  .lg\:leading-\[106\%\] {
+    @media (width >= 64rem) {
+      --tw-leading: 106%;
+      line-height: 106%;
+    }
+  }
+  .lg\:leading-\[120\%\] {
+    @media (width >= 64rem) {
+      --tw-leading: 120%;
+      line-height: 120%;
     }
   }
   .xl\:w-fit {
