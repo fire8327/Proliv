@@ -201,6 +201,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-1 {
+    margin-block: calc(var(--spacing) * 1);
+  }
   .mt-auto {
     margin-top: auto;
   }
@@ -227,6 +230,12 @@
   }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -278,6 +287,9 @@
   }
   .max-w-\[499px\] {
     max-width: 499px;
+  }
+  .max-w-\[500px\] {
+    max-width: 500px;
   }
   .max-w-\[981px\] {
     max-width: 981px;
@@ -382,6 +394,9 @@
   .gap-\[34px\] {
     gap: 34px;
   }
+  .gap-\[70px\] {
+    gap: 70px;
+  }
   .gap-\[76px\] {
     gap: 76px;
   }
@@ -467,6 +482,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .px-\[20px\] {
     padding-inline: 20px;
   }
@@ -475,6 +493,9 @@
   }
   .px-\[30px\] {
     padding-inline: 30px;
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -511,6 +532,9 @@
   }
   .py-\[13\] {
     padding-block: 13;
+  }
+  .py-\[100px\] {
+    padding-block: 100px;
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
@@ -597,6 +621,9 @@
   .text-\[clamp\(\,20px\)\] {
     font-size: clamp(, 20px);
   }
+  .text-\[clamp\(1\)\] {
+    font-size: clamp(1);
+  }
   .text-\[clamp\(2\,19px\)\] {
     font-size: clamp(2, 19px);
   }
@@ -659,6 +686,9 @@
   }
   .text-\[clamp\(15px\,2vw\,20px\)\] {
     font-size: clamp(15px, 2vw, 20px);
+  }
+  .text-\[clamp\(16px\,2wv\,20px\)\] {
+    font-size: clamp(16px, 2wv, 20px);
   }
   .text-\[clamp\(17\,2vw\,22px\)\] {
     font-size: clamp(17, 2vw, 22px);
@@ -762,8 +792,32 @@
   .text-\[clamp\(38px\)\] {
     font-size: clamp(38px);
   }
+  .text-\[clamp\(176px\,\)\] {
+    font-size: clamp(176px, );
+  }
+  .text-\[clamp\(176px\,\,\)\] {
+    font-size: clamp(176px, , );
+  }
+  .text-\[clamp\(176px\,\,500px\)\] {
+    font-size: clamp(176px, , 500px);
+  }
+  .text-\[clamp\(176px\,2wv\,20px\)\] {
+    font-size: clamp(176px, 2wv, 20px);
+  }
+  .text-\[clamp\(176px\,50vw\,500px\)\] {
+    font-size: clamp(176px, 50vw, 500px);
+  }
+  .text-\[clamp\(176px\,50wv\,20px\)\] {
+    font-size: clamp(176px, 50wv, 20px);
+  }
+  .text-\[clamp\(176px\,50wv\,500px\)\] {
+    font-size: clamp(176px, 50wv, 500px);
+  }
   .text-\[clamp\(215px\,2vw\,19px\)\] {
     font-size: clamp(215px, 2vw, 19px);
+  }
+  .text-\[clamp\(px\,2wv\,20px\)\] {
+    font-size: clamp(px, 2wv, 20px);
   }
   .leading-0 {
     --tw-leading: calc(var(--spacing) * 0);
@@ -854,6 +908,11 @@
   .placeholder\:text-\[\#FFF4EB\] {
     &::placeholder {
       color: #FFF4EB;
+    }
+  }
+  .max-lg\:mt-auto {
+    @media (width < 64rem) {
+      margin-top: auto;
     }
   }
   .max-lg\:hidden {
@@ -1054,9 +1113,19 @@
       gap: calc(var(--spacing) * 6);
     }
   }
+  .lg\:gap-10 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:gap-12 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:gap-16 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 16);
     }
   }
   .lg\:gap-\[30px\] {
@@ -1067,6 +1136,11 @@
   .lg\:gap-\[61px\] {
     @media (width >= 64rem) {
       gap: 61px;
+    }
+  }
+  .lg\:gap-\[136px\] {
+    @media (width >= 64rem) {
+      gap: 136px;
     }
   }
   .lg\:lg\:rounded-\[20px\] {
@@ -1164,6 +1238,11 @@
   .lg\:py-\[30px\] {
     @media (width >= 64rem) {
       padding-block: 30px;
+    }
+  }
+  .lg\:py-\[120px\] {
+    @media (width >= 64rem) {
+      padding-block: 120px;
     }
   }
   .lg\:pt-\[30px\] {
