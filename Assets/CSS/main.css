@@ -615,6 +615,11 @@
       height: 274px;
     }
   }
+  .max-lg\:flex-col {
+    @media (width < 64rem) {
+      flex-direction: column;
+    }
+  }
   .max-lg\:justify-between {
     @media (width < 64rem) {
       justify-content: space-between;
