@@ -249,6 +249,12 @@
   .w-1\/5 {
     width: calc(1/5 * 100%);
   }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -345,6 +351,15 @@
   }
   .resize {
     resize: both;
+  }
+  .list-inside {
+    list-style-position: inside;
+  }
+  .list-decimal {
+    list-style-type: decimal;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -557,6 +572,9 @@
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .py-\[7px\] {
     padding-block: 7px;
   }
@@ -565,6 +583,9 @@
   }
   .py-\[13\] {
     padding-block: 13;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .py-\[100px\] {
     padding-block: 100px;
@@ -711,6 +732,9 @@
   .text-\[clamp\(15\,1\.8vw\,18px\)\] {
     font-size: clamp(15, 1.8vw, 18px);
   }
+  .text-\[clamp\(15px\,2\.4vw\,24px\)\] {
+    font-size: clamp(15px, 2.4vw, 24px);
+  }
   .text-\[clamp\(15px\,2vw\,18px\)\] {
     font-size: clamp(15px, 2vw, 18px);
   }
@@ -719,6 +743,9 @@
   }
   .text-\[clamp\(15px\,2vw\,20px\)\] {
     font-size: clamp(15px, 2vw, 20px);
+  }
+  .text-\[clamp\(15px\,2vw\,24px\)\] {
+    font-size: clamp(15px, 2vw, 24px);
   }
   .text-\[clamp\(16px\,2wv\,20px\)\] {
     font-size: clamp(16px, 2wv, 20px);
@@ -798,6 +825,9 @@
   .text-\[clamp\(25px\)\] {
     font-size: clamp(25px);
   }
+  .text-\[clamp\(25px\,\)\] {
+    font-size: clamp(25px, );
+  }
   .text-\[clamp\(25px\,2vw\,19px\)\] {
     font-size: clamp(25px, 2vw, 19px);
   }
@@ -806,6 +836,9 @@
   }
   .text-\[clamp\(25px\,3\.5vw\,38px\)\] {
     font-size: clamp(25px, 3.5vw, 38px);
+  }
+  .text-\[clamp\(25px\,4vw\,40px\)\] {
+    font-size: clamp(25px, 4vw, 40px);
   }
   .text-\[clamp\(25px\,4vw\,45px\)\] {
     font-size: clamp(25px, 4vw, 45px);
@@ -1086,6 +1119,11 @@
       width: 25%;
     }
   }
+  .lg\:w-\[44\%\] {
+    @media (width >= 64rem) {
+      width: 44%;
+    }
+  }
   .lg\:w-\[45\%\] {
     @media (width >= 64rem) {
       width: 45%;
@@ -1293,6 +1331,11 @@
       padding-block: calc(var(--spacing) * 3);
     }
   }
+  .lg\:py-4 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 4);
+    }
+  }
   .lg\:py-5 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
@@ -1306,6 +1349,16 @@
   .lg\:py-12 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:py-14 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:py-20 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
   .lg\:py-\[30px\] {
@@ -1390,6 +1443,11 @@
   .xl\:justify-end {
     @media (width >= 80rem) {
       justify-content: flex-end;
+    }
+  }
+  .xl\:gap-\[30px\] {
+    @media (width >= 80rem) {
+      gap: 30px;
     }
   }
   .xl\:gap-\[200px\] {
