@@ -881,6 +881,12 @@
       border-width: 3px;
     }
   }
+  .max-lg\:border-\[5px\] {
+    @media (width < 64rem) {
+      border-style: var(--tw-border-style);
+      border-width: 5px;
+    }
+  }
   .max-lg\:bg-\[\#132420\] {
     @media (width < 64rem) {
       background-color: #132420;
